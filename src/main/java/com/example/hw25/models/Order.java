@@ -8,6 +8,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor
 @Table("order")
@@ -16,7 +17,4 @@ public class Order {
     private int id;
     private Timestamp date;
     private int cost;
-
-//    @ManyToAny
-//    private List<Product> products;
 }
